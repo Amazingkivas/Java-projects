@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainPane" prefHeight="504.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java_game.GameView">
+   <children>
+      <Button layoutX="14.0" layoutY="439.0" mnemonicParsing="false" onAction="#start" prefHeight="51.0" prefWidth="114.0" text="Начало игры" />
+      <Button layoutX="139.0" layoutY="439.0" mnemonicParsing="false" onAction="#stop" prefHeight="51.0" prefWidth="114.0" text="Остановить игру" />
+      <Button fx:id="shoot" layoutX="265.0" layoutY="439.0" mnemonicParsing="false" onAction="#shoot" prefHeight="51.0" prefWidth="114.0" text="Выстрел" />
+      <Label layoutX="599.0" layoutY="43.0" prefHeight="30.0" prefWidth="124.0" text="Счёт игрока:">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="scoreLabel" layoutX="599.0" layoutY="73.0" prefHeight="30.0" prefWidth="124.0" text="0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e7ff1f" height="410.0" layoutX="7.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="68.0" />
+      <Polygon fx:id="shooter" fill="DODGERBLUE" layoutX="56.0" layoutY="222.0" points="-28.0, -28.0, -28.0, 22.0, -2.0, -3.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line fx:id="horizontal" endX="582.0" layoutX="176.0" layoutY="424.0" startX="-100.0" />
+      <Line fx:id="border" endX="-100.0" endY="-422.0" layoutX="664.0" layoutY="422.0" startX="-100.0" />
+      <Line endX="-100.0" endY="-422.0" layoutX="611.0" layoutY="422.0" startX="-100.0" />
+      <Line endX="-100.0" endY="-422.0" layoutX="525.0" layoutY="422.0" startX="-100.0" />
+      <Circle fx:id="circle_large" fill="#ff301f" layoutX="425.0" layoutY="211.0" radius="34.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle_small" fill="#ff381f" layoutX="511.0" layoutY="211.0" radius="17.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="599.0" layoutY="164.0" prefHeight="30.0" prefWidth="124.0" text="Выстрелов:">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="shotsLabel" layoutX="599.0" layoutY="194.0" prefHeight="30.0" prefWidth="124.0" text="0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="439.0" mnemonicParsing="false" onAction="#start" prefHeight="51.0" prefWidth="114.0" text="Начало игры" />
+      <Button layoutX="139.0" layoutY="439.0" mnemonicParsing="false" onAction="#stop" prefHeight="51.0" prefWidth="114.0" text="Остановить игру" />
+      <Button layoutX="265.0" layoutY="439.0" mnemonicParsing="false" onAction="#shoot" prefHeight="51.0" prefWidth="114.0" text="Выстрел" />
+      <Button layoutX="391.0" layoutY="439.0" mnemonicParsing="false" onAction="#pause" prefHeight="51.0" prefWidth="114.0" text="Пауза" />
+      <Button layoutX="517.0" layoutY="439.0" mnemonicParsing="false" onAction="#resume" prefHeight="51.0" prefWidth="114.0" text="Продолжить" />
+      <Line fx:id="arrow" startX="88.0" startY="219.0" endX="108.0" endY="219.0" stroke="#000000" strokeWidth="3" />
+   </children>
+</AnchorPane>
