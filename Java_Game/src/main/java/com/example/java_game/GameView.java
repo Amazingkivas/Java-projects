@@ -85,7 +85,7 @@ public class GameView {
                 while (play) {
                     Platform.runLater(this::next);
                     try {
-                        Thread.sleep(10); // Задержка для плавного движения
+                        Thread.sleep(10);
                     } catch (InterruptedException e) {
                         play = false;
                         t = null;
